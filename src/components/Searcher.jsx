@@ -1,25 +1,32 @@
 import React from "react";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+
 
 const Searcher = ({ setChangelocation }) => {
-  const [search, setSearch] = useState("");
+    const { register, handleSubmit } = useForm();
 
-  const handdleInput = (e) => {
-    setSearch(e.target.value);
-  };
-  const preventDefault = (e) => {
-    e.preventDefault();
-  };
-  const handllerSubmit = () => {
-    setChangelocation(search);
-  };
+
+  const sumit= data =>{
+    setChangelocation(data.search)
+   }
+
 
   return (
-    <form onSubmit={preventDefault}>
-      <input type="text" value={search} onChange={handdleInput} placeholder="Type a location id" className="text_area"/>
-     <div className="input_icon"> <box-icon name='search' animation='tada' color='#42b4ca'onClick={handllerSubmit}  ></box-icon></div>
-     
-        </form>
+    <form  onSubmit={handleSubmit(sumit)}>
+      <input
+        type="text"
+        placeholder="Type a location id"
+        className="text_area"
+        {...register('search')}
+      />
+      <button className="input_icon">
+          <box-icon
+          name="search"
+          animation="tada"
+          color="#42b4ca"
+          ></box-icon>
+      </button>
+    </form>
   );
 };
 
