@@ -156,14 +156,15 @@ form{
     transition:transform 200ms ease ;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 10px 10px 6px 0 rgb(41, 60, 50),
-        -4px -4px 6px 0 rgba(47, 66, 60, 0.394),
-        inset -4px -4px 6px 0 rgba(20, 21, 20, 0.2),
-        inset 4px 4px 6px 0 rgba(37, 39, 38, 0.359);
+
 }
 .card_resident:hover{
     transform: scale(1.06);
     transition:transform 200ms ease ;
+    box-shadow: 4px 4px 3px 0 rgb(41, 60, 50),
+    -2px -2px 3px 0 rgba(47, 66, 60, 0.394),
+    inset -2px -2px 3px 0 rgba(20, 21, 20, 0.2),
+    inset 2px 2px 3px 0 rgba(37, 39, 38, 0.359);
 }
 
 .status {
@@ -225,4 +226,31 @@ hr{
     font-weight: bold;
     color: var(--white);
     margin-top: 2px;
+}
+
+/* pagination */
+
+.pagination{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+
+}
+
+.pagination>button{
+    font-size: 20px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(31, 66, 2);
+    color: #42b4ca;
+    transition:transform 0.3s,  background-color 0.3s, color 0.3s;
+}
+
+.pagination>button:hover{
+    transform: scale(1.2);
+    background-color: rgb(51, 108, 5);
+    color: #00d5ff;
+    transition:transform 0.3s,  background-color 0.3s, color 0.3s;
 }

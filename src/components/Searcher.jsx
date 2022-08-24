@@ -2,12 +2,13 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 
-const Searcher = ({ setChangelocation }) => {
+const Searcher = ({ setChangelocation,setCurrentPage }) => {
     const { register, handleSubmit } = useForm();
 
 
   const sumit= data =>{
     setChangelocation(data.search)
+    setCurrentPage(1)
    }
 
 
