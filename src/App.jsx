@@ -10,7 +10,7 @@ function App() {
   const [location, setLocation] = useState();
   const [changelocation, setChangelocation] = useState(``);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(6);
+  const [postPerPage, setPostPerPage] = useState(9);
   const [aux, setAux] = useState();
 
 

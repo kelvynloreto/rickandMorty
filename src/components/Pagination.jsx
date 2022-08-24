@@ -5,7 +5,7 @@ const Pagination = ({postPerPage,totalPost,setCurrentPage}) => {
 for (let i = 1; i <= Math.ceil(totalPost/postPerPage); i++) {
      pages.push(i)   }
 
-if (Math.ceil(totalPost/postPerPage)>postPerPage) {
+if (Math.ceil(totalPost/postPerPage)>1) {
     return (
         <div className='pagination'> 
                     {
