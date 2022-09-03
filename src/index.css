@@ -266,8 +266,9 @@ hr{
     }
 
     .header_info{
-        min-width: none;
-width: 600px ;
+
+min-width: 400px ;
+max-width: 900px;
 display: flex;
 justify-content: center;
 align-items: center;
