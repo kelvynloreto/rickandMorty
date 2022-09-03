@@ -37,7 +37,7 @@ function App() {
 const currenPost= aux?.slice(fistPostIndex,lastPostIndex)
 
   return (
-    <div className="main">
+  
       <div className="App">
         <header>
           <img src={imgLogo} alt="" />
@@ -51,7 +51,7 @@ const currenPost= aux?.slice(fistPostIndex,lastPostIndex)
         </div>
         <Pagination totalPost={aux?.length} postPerPage={postPerPage} setCurrentPage={setCurrentPage}/>
       </div>
-    </div>
+ 
   );
 }
 

@@ -24,14 +24,18 @@ body{
     background-attachment: fixed;
     min-height: 180vh;
     overflow-x: hidden;
+    width: 100vw    ;
 }
-
+.main{
+    width: 100%;
+}
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     flex-direction: column;
+    width: 100%;
 }
 
 /* header */
@@ -254,3 +258,48 @@ hr{
     color: #00d5ff;
     transition:transform 0.3s,  background-color 0.3s, color 0.3s;
 }
+@media (max-width:950px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_info{
+        min-width: none;
+width: 600px ;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    }
+    .container_card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .card_resident{
+        max-width: 220px;
+       height: 460px;
+    }
+    .header_info >section{
+        display: flex;
+        justify-content: baseline;
+    }
+    .header_info_text>h2{
+        font-size: 15px;
+    }
+    .header_info >h1{
+        font-size: 25px;
+    }
+    .info_card .card_text_white {
+    font-size: 15px;
+    }
+    .info_card .card_name {
+font-size: 20px;
+    }
+}
+
