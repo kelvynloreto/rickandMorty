@@ -287,11 +287,12 @@ flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         gap: 10px;
+        margin-left: 10%;
     }
     .card_resident{
-     max-width: 220px;
+     max-width: 200px;
     height: 460px;
     }
     .text_area{
@@ -317,6 +318,8 @@ font-size: 20px;
         min-width: 300px ;
         max-width: 900px;
         gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
