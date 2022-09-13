@@ -261,6 +261,8 @@ hr{
     color: #00d5ff;
     transition:transform 0.3s,  background-color 0.3s, color 0.3s;
 }
+
+
 @media (max-width:950px) {
     body{
         display: flex;
@@ -276,7 +278,7 @@ header>img{
     max-width: 200px;
 }
 
-    .header_info{
+.header_info{
 min-width: auto ;
 max-width: 900px;
 display: flex;
@@ -308,8 +310,8 @@ height: auto;
     }
     .header_info >section{
         display: flex;
-        justify-content: baseline;
         flex-wrap: wrap;
+        justify-content: center
     }
     .header_info_text>h2{
         font-size: 15px;
@@ -330,4 +332,10 @@ font-size: 20px;
     }
 
 }
-
+@media (max-width:500px){
+    .card_resident 
+{
+    max-width:300px; 
+    height:auto
+}
+}
