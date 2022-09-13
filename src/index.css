@@ -280,7 +280,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+padding-left: 0;
+min-width:0;
+height: auto;
     }
+
     .container_card{
         display: flex;
         flex-direction: row;
@@ -302,12 +306,13 @@ flex-direction: column;
     .header_info >section{
         display: flex;
         justify-content: baseline;
+        flex-wrap: wrap;
     }
     .header_info_text>h2{
         font-size: 15px;
     }
     .header_info >h1{
-        font-size: 25px;
+        font-size: 18px;
     }
     .info_card .card_text_white {
     font-size: 15px;
